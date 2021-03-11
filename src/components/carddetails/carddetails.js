@@ -78,7 +78,7 @@ function Carddetails() {
     <div className="container-fluid">
       <h1 style={{ justifyContent: "center", textAlign: "center" }}>
         {" "}
-        UPLODER<sup>2</sup>
+        UPLOADER<sup>2</sup>
       </h1>
       <div className="h5 mb-0 font-weight-bold text-danger">
      <Link to="/upload">
