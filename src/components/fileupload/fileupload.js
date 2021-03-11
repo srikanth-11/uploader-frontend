@@ -48,7 +48,7 @@ const FileUpload = () => {
         userid: myuserid
       }
       console.log(data)
-      const filedata = await axios.post(`https://sri-uploader.herokuapp.com//file`, data, {
+      const filedata = await axios.post(`https://sri-uploader.herokuapp.com/file`, data, {
         headers: {
           'Content-Type': 'application/json',
           'authorization': token,
