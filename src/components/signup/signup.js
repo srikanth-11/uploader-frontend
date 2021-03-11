@@ -48,12 +48,12 @@ function Signup() {
 
   return (
     <div className="Form m-1">
-      <div className="row no-gutters pt-5  justify-content-center p-4">
+      <div className="row no-gutters pt-5  justify-content-md-center p-4">
         <div className="col-lg-5 p-3 pt-5">
           <img
             src={Signuplogo}
             className="img-fluid"
-            alt="Login Logo"
+            alt="signup Logo"
           />
         </div>
         <div className="col-lg-7">

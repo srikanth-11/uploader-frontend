@@ -41,7 +41,7 @@ function Forgotpassword() {
   }, [email])
 
 
-  return <div className="Form m-5">
+  return <div className="Form m-1">
 
     <div
       className="row no-gutters pt-5 shadow-lg justify-content-md-center p-4"

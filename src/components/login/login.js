@@ -44,7 +44,7 @@ function Login() {
   }, [userCredentials.email, userCredentials.password])
 
   return (
-    <div className="Form m-5">
+    <div className="Form m-1">
       <div className="row no-gutters pt-5 shadow-lg justify-content-md-center p-4">
         <div className="col-lg-5 p-3 pt-5">
           <img
@@ -54,7 +54,7 @@ function Login() {
           />
         </div>
         <div className="col-lg-7">
-          <h1 className="font-weight-bold">Login</h1>
+          <h1 className="font-weight-bold text-grey">Login</h1>
           <h4>Sign In to your account</h4>
           <form id="loginForm" action="">
             <div className="form-group form-row">
