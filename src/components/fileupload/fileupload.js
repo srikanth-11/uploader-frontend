@@ -75,39 +75,14 @@ const FileUpload = () => {
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <form onSubmit={submitFile}>
-
-
-
-
-              <div class="form-group files">
-                <label>Upload Your File </label>
-                <input type="file" class="form-control" />
-                <button type="submit" className="btn btn-primary my-2 my-sm-0 float-right">upload</button>
-              </div>
-
-
-            </form>
-
-
           </div>
           <div class="col-md-6">
-            <form onSubmit={submitFile}>
-
-
-
-
-              <div class="form-group files color">
-                <label>Upload Your File </label>
-                <input type="file" class="form-control" />
-                <button type="submit" className="btn btn-primary my-2 my-sm-0 float-right">upload</button>
-              </div>
-
-
-            </form>
-
-
-          </div>
+            <form onSubmit={submitFile}><div class="form-group files color">
+              <label>Upload Your File </label>
+              <input type="file" class="form-control" onChange={event => setFile(event.target.files)} />
+              <button type="submit" className="btn btn-primary my-2 my-sm-0 float-right">upload</button>
+            </div>
+            </form> </div>
         </div>
       </div>
 
@@ -115,11 +90,7 @@ const FileUpload = () => {
 
 
 
-      <form onSubmit={submitFile}>
-        <label className="text-light p-1">Upload file</label>
-        <input type="file" className="text-light p-1 justify-content-center" onChange={event => setFile(event.target.files)} />
-        <button type="submit" className="btn btn-primary my-2 my-sm-0 float-right">upload</button>
-      </form>
+
 
 
       <Dashboard>
