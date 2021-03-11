@@ -81,6 +81,13 @@ function Carddetails() {
         UPLODER<sup>2</sup>
       </h1>
       <div className="h5 mb-0 font-weight-bold text-danger">
+     <Link to="/upload">
+        <button className="btn btn-primary float-left" >
+          Go to files
+        </button>
+        </Link> 
+      </div>
+      <div className="h5 mb-0 font-weight-bold text-danger">
         <button className="btn btn-dark float-right" onClick={Logout}>
           logout
         </button>

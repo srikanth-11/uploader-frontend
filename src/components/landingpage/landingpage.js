@@ -1,11 +1,10 @@
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './Header.css'
 import './Greeting.css'
 import './Contact.css'
 import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
-import Typewriter from 'typewriter-effect';
 import Headroom from "react-headroom";
 import Button from "../../components/button/Button";
 
@@ -25,7 +24,20 @@ function Landingpage() {
         <label className="menu-icon" htmlFor="menu-btn">
           <span className="navicon"></span>
         </label>
-
+        <ul className="menu">
+        <Link to="/login">
+          <li>
+            <a>Login</a>
+           
+          </li>
+          </Link>
+          <Link to="/signup">
+          <li>
+            <a>Signup</a>
+           
+          </li>
+          </Link>
+        </ul>
       </header>
     </Headroom>
     <Fade bottom duration={1000} distance="40px">
@@ -45,22 +57,7 @@ function Landingpage() {
 
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
-                <Link to="/login">
-                  <Button
-                    text="login"
-                    newTab={true}
-
-                  />
-                </Link>
-                <Link to="/signup">
-                  <Button
-                    text="signup"
-                    newTab={true}
-
-                  />
-                </Link>
-
-              </div>
+               </div>
             </div>
           </div>
           <div className="greeting-image-div">

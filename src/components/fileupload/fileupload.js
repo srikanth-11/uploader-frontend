@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import Dashboard from '../../components/dashboard/dashboard'
+import { useHistory } from "react-router-dom";
+
 import { useAlert } from "react-alert";
 
 
@@ -68,10 +69,42 @@ const FileUpload = () => {
       alert.error('Unable to create');
     }
   };
+  let history = useHistory();
+  const Logout = () => {
+    auth.logoutUser();
+    history.push("/");
+  };
 
   return (
     <>
+ <div className="container-fluid">
+      <h1 style={{ justifyContent: "center", textAlign: "center" }}>
+        {" "}
+        UPLODER<sup>2</sup>
+      </h1>
+      <div className="h5 mb-0 font-weight-bold text-danger">
+     <Link to="/app">
+        <button className="btn btn-primary float-left" >
+          Go to files
+        </button>
+        </Link> 
+      </div>
+      <div className="h5 mb-0 font-weight-bold text-danger">
+        <button className="btn btn-dark float-right" onClick={Logout}>
+          logout
+        </button>
+      </div>
+      <div>
+        <h1
+          style={{ justifyContent: "center", textAlign: "center" }}
+          id="fix"
+          className="text-primary center"
+        >
+          {youremail}
+        </h1>
+      </div>
 
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -79,6 +112,7 @@ const FileUpload = () => {
           <div class="col-md-6">
             <form onSubmit={submitFile}><div class="form-group files color">
               <label>Upload Your File </label>
+              <p>or drag it here</p>
               <input type="file" class="form-control" onChange={event => setFile(event.target.files)} />
               <button type="submit" className="btn btn-primary my-2 my-sm-0 float-right">upload</button>
             </div>
@@ -93,9 +127,7 @@ const FileUpload = () => {
 
 
 
-      <Dashboard>
-
-      </Dashboard>
+    
 
 
 

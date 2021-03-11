@@ -9,6 +9,7 @@ import Login from './components/login/login'
 import { positions, Provider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 import ProtectedRoute from './components/protected-route/protectedroute'
+import Dashboard from './components/dashboard/dashboard'
 import {
   BrowserRouter,
   Switch,
@@ -25,6 +26,7 @@ function App() {
     <BrowserRouter>
       <Switch>
         <ProtectedRoute path="/app" component={FileUpload} />
+        <ProtectedRoute path = "/upload" component={Dashboard}/>
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/" component={Landingpage}/>
