@@ -58,7 +58,7 @@ const FileUpload = () => {
 
       })
       console.log(filedata)
-      window.location.reload()
+    
       if (filedata) {
         alert.success(filedata.data.message);
 
