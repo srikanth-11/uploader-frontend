@@ -126,7 +126,7 @@ function Carddetails() {
                       large={item.location}
                       alt={item.filename}
                     />
-                    ;
+                    
                     <div className="text-xl font-weight-bold text-primary  mb-1">
                       Uploaded- {item.createdday}-{item.createdtime}
                     </div>
