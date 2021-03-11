@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+
 import FileUpload from './components/fileupload/fileupload'
 import Forgotpassword from './components/forgotpassword/forgotpassword'
 import Resetpassword from './components/resetpassword/resetpassword'
@@ -25,8 +24,8 @@ function App() {
   return <> <Provider template={AlertTemplate} {...options}>
     <BrowserRouter>
       <Switch>
-        <ProtectedRoute path="/app" component={FileUpload} />
-        <ProtectedRoute path = "/upload" component={Dashboard}/>
+        <ProtectedRoute path="/app" component={Dashboard} />
+        <ProtectedRoute path = "/upload" component={FileUpload}/>
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/" component={Landingpage}/>

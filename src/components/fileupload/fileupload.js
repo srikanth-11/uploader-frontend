@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useHistory ,Link} from "react-router-dom";
 import auth from '../../service/auth'
+import './fileupload.css'
 
 import { useAlert } from "react-alert";
 
@@ -86,7 +87,7 @@ const FileUpload = () => {
       <div className="h5 mb-0 font-weight-bold text-danger">
      <Link to="/app">
         <button className="btn btn-primary float-left" >
-          Go to files
+          check your files
         </button>
         </Link> 
       </div>
@@ -108,18 +109,19 @@ const FileUpload = () => {
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+        <div className="col-md-6">
+            <p>You can upload your stuff here</p>
           </div>
           <div class="col-md-6">
             <form onSubmit={submitFile}><div class="form-group files color">
               <label>Upload Your File </label>
-              <p>or drag it here</p>
+              
               <input type="file" class="form-control" onChange={event => setFile(event.target.files)} />
-              <button type="submit" className="btn btn-primary my-2 my-sm-0 float-right">upload</button>
+              <button type="submit" className="btn btn-primary my-2 my-sm-0 p-2 float-right">upload</button>
             </div>
             </form> </div>
         </div>
-      </div>
+        </div>
 
 
 

@@ -83,7 +83,7 @@ function Carddetails() {
       <div className="h5 mb-0 font-weight-bold text-danger">
      <Link to="/upload">
         <button className="btn btn-primary float-left" >
-          Go to files
+        upload your files
         </button>
         </Link> 
       </div>

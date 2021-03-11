@@ -15,7 +15,7 @@ function Landingpage() {
 
     <Headroom>
       <header className="header">
-        <a href="#" className="logo">
+        <a  className="logo">
           <span className="grey-color"> </span>
           <span className="logo-name">Uploader<sup>2</sup></span>
           <span className="grey-color"></span>
