@@ -114,11 +114,11 @@ const FileUpload = () => {
             <p>you can drag and drop or choose the file</p>
           </div>
           <div class="col-md-6">
-            <form onSubmit={submitFile}><div class="form-group files color">
+            <form class="p-1"onSubmit={submitFile}><div class="form-group files color">
               <label>Upload Your File </label>
               
               <input type="file" class="form-control" onChange={event => setFile(event.target.files)} />
-              <button type="submit" className="btn btn-primary my-2 my-sm-0 p-3 float-right">upload</button>
+              <button type="submit" className="btn btn-primary my-2 my-sm-0 p-2 float-right">upload</button>
             </div>
             </form> </div>
         </div>
