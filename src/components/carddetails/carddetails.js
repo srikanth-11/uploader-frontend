@@ -114,7 +114,7 @@ function Carddetails() {
           />
         </div>
         {file.map((item, index) => (
-          <div className="col-xl-4 col-md-6 mb-4 p-1" key={item.nanoid}>
+          <div className="col-xl-4 col-md-6 mb-4 p-1 border-left-primary" key={item.nanoid}>
             <div className="card border-left-primary shadow h-100 py-2">
               <div className="card-body">
                 <div className="row no-gutters align-items-center">
