@@ -77,16 +77,16 @@ function Landingpage() {
             <p className="subTitle contact-subtitle">Contact us for any problems about our product</p>
 
             <div className="contact-text-div">
-              <a className="contact-detail" href="tel:9848282503">
-                9848282503
+              <a className="contact-detail" href="tel:8374242180">
+                8374242180
               </a>
               <br />
               <br />
               <a
                 className="contact-detail-email"
-                href="mailto:kasireddysrikanth27@gmail.com"
+                href="mailto:saikiranchatlapalli84@gmail.com"
               >
-                kasireddysrikanth27@gmail.com
+                saikiranchatlapalli84@gmail.com
               </a>
               <br />
               <br />
@@ -100,7 +100,7 @@ function Landingpage() {
     <Fade bottom duration={1000} distance="5px">
       <div className="footer-div">
         <p className="footer-text">
-          {emoji("Made with ❤️ by Srikanth Kasireddy")}
+          {emoji("Made with ❤️ by Saikiran")}
         </p>
       </div>
     </Fade>
